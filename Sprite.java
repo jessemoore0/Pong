@@ -8,19 +8,19 @@ public class Sprite {
 	private Color colour;
 	private int initialXPosition, initialYPosition;
 	
-	public int getxPosition() {
+	public int getXPosition() {
 		return xPosition;
 	}
 	
-	public void setxPosition(int xPosition) {
+	public void setXPosition(int xPosition) {
 		this.xPosition = xPosition;
 	}
 	
-	public int getyPosition() {
+	public int getYPosition() {
 		return yPosition;
 	}
 	
-	public void setyPosition(int yPosition) {
+	public void setYPosition(int yPosition) {
 		this.yPosition = yPosition;
 	}
 	
@@ -42,19 +42,19 @@ public class Sprite {
 		}
 	}
 	
-	public int getxVelocity() {
+	public int getXVelocity() {
 		return xVelocity;
 	}
 	
-	public void setxVelocity(int xVelocity) {
+	public void setXVelocity(int xVelocity) {
 		this.xVelocity = xVelocity;
 	}
 	
-	public int getyVelocity() {
+	public int getYVelocity() {
 		return yVelocity;
 	}
 	
-	public void setyVelocity(int yVelocity) {
+	public void setYVelocity(int yVelocity) {
 		this.yVelocity = yVelocity;
 	}
 	
@@ -88,11 +88,11 @@ public class Sprite {
 	}
 	
 	public void resetToInitialPosition() {
-		setxPosition(initialXPosition);
-		setyPosition(initialYPosition);
+		setXPosition(initialXPosition);
+		setYPosition(initialYPosition);
 	}
 	
 	public Rectangle getRectangle() {
-		return new Rectangle(getxPosition(), getyPosition(), getWidth(), getHeight());
+		return new Rectangle(getXPosition(), getYPosition(), getWidth(), getHeight());
 	}
 }
